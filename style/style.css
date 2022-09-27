@@ -1,0 +1,137 @@
+* {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: rgb(147, 248, 223);
+}
+
+i {
+  transition: 0.3s;
+}
+i:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+aside {
+  position: absolute;
+  top: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+aside i {
+  font-size: 25px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  background-color: transparent;
+  width: 350px;
+  transition: 0.3s;
+}
+
+span {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.unfinished {
+  text-decoration: none;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+
+.addTask {
+  border-bottom: 1px solid black;
+}
+
+input:hover {
+  border-bottom: 1px solid black;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@keyframes errorAdd {
+  0% {
+    border-bottom: 1px solid black;
+  }
+  50% {
+    border-bottom: 1px solid red;
+  }
+  100% {
+    border-bottom: 1px solid black;
+  }
+}
+@media (max-width: 730px) {
+  aside {
+    top: 10px;
+    right: 0;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
+  }
+  input {
+    width: 250px;
+  }
+  button {
+    margin: 0 0 0 0;
+  }
+  .taskAdd {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .taskAdd button {
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+  .task {
+    width: 100%;
+  }
+  .task span {
+    width: 250px;
+  }
+  .select-btn {
+    margin-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

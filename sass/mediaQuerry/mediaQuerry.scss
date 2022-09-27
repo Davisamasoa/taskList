@@ -1,0 +1,41 @@
+@media (max-width: 730px) {
+	aside {
+		top: 10px;
+		right: 0;
+		flex-direction: row;
+		gap: 5px;
+		width: 100%;
+		justify-content: center;
+	}
+
+	input {
+		width: 250px;
+	}
+
+	button {
+		margin: 0 0 0 0;
+	}
+
+	.taskAdd {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.taskAdd button {
+		margin-right: 20px;
+		margin-left: -20px;
+	}
+
+	.task {
+		width: 100%;
+	}
+
+	.task span {
+		width: 250px;
+	}
+
+	.select-btn {
+		margin-right: 20px;
+	}
+}
