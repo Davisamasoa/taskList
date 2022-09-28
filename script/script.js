@@ -5,7 +5,14 @@ let selectBtn = document.querySelector("button");
 const sectionTask = document.querySelector("section");
 const inputTask = document.querySelector(".task input");
 
-addBtn.addEventListener("click", () => {
+addBtn.addEventListener("click", addTaskFunction);
+window.addEventListener("keydown", (e) => {
+	if (e.key == "Enter") {
+		addTaskFunction();
+	}
+});
+
+function addTaskFunction() {
 	if (inputAdd.value == "") {
 		inputAdd.style.animation = "errorAdd 0.7s";
 		setTimeout(() => {
@@ -58,4 +65,4 @@ addBtn.addEventListener("click", () => {
 			sectionTask.removeChild(newIconTrash.parentNode);
 		});
 	}
-});
+}
