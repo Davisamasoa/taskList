@@ -1,5 +1,5 @@
 * {
-  color: black;
+  color: rgb(243, 242, 242);
   text-decoration: none;
   list-style: none;
   padding: 0;
@@ -8,7 +8,9 @@
 }
 
 body {
-  background-color: rgb(147, 248, 223);
+  background: rgb(2, 0, 36);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 121, 99) 100%, rgb(0, 212, 255) 100%);
 }
 
 i {
@@ -34,7 +36,7 @@ aside i {
 
 input {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgb(243, 242, 242);
   background-color: transparent;
   width: 350px;
   transition: 0.3s;
@@ -56,15 +58,15 @@ span {
 }
 
 .addTask {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(243, 242, 242);
 }
 
 input:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(243, 242, 242);
 }
 input:focus {
   outline: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(243, 242, 242);
 }
 
 button {
